@@ -11,6 +11,13 @@ body {
     justify-content: flex-end;
 }
 
+#discount p{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 15px;
+    font-weight:600;
+}
+
 #offer {
     margin: 0;
 }
@@ -47,16 +54,25 @@ main {
     background-image: url('images/floral.png');
     text-align: center;
 }
+/* Font weight */
+#about p{
+    font-family: 'Montserrat', sans-serif;
+    font-size:20px;
+    font-weight: bold;
+}
 
 hr {
-    width: 50%;
-    border: 1px solid black;
-}   
+    width: 55%;
+    border: 0.5px solid black;
+}
 
 h1 {
     margin: 0;
-    padding: 25px;
-    font-size: 50px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 60px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
 }
 
 button {
@@ -67,4 +83,75 @@ button {
     border: none;
     margin: 25px;
     font-size: 20px;
+}
+
+#our-services {
+    background-image: url('images/floral.png');
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+#services {
+    display: flex;
+    justify-content: center;
+}
+
+#services i {
+    font-size: 7em;
+}
+
+#our-services h3 {
+    padding-top: 1em;
+}
+
+#services i:hover {
+    color: red;
+}
+
+@media only screen and (max-width:500px) {
+    #services {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+#portfolio {
+    text-align: center;
+    background-color: #ddceb4;
+    background-image: url('images/floral.png')
+}
+
+#portfolio {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+#portfolio p{
+    font-family: 'Montserrat', sans-serif;
+    font-size:20px;
+    font-weight: bold;
+   
+}
+h3{
+    font-family: 'Lobster', cursive;
+    font-size: 35px;
+}
+
+#services p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#services figure{
+    padding: 20px;
+}
+
+#services h2{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+}
+
+span{
+    display:block;
 }
