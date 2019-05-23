@@ -11,11 +11,11 @@ body {
     justify-content: flex-end;
 }
 
-#discount p{
+#discount p {
     font-family: 'Montserrat', sans-serif;
     color: white;
     font-size: 15px;
-    font-weight:600;
+    font-weight: 600;
 }
 
 #offer {
@@ -54,10 +54,12 @@ main {
     background-image: url('images/floral.png');
     text-align: center;
 }
+
 /* Font weight */
-#about p{
+
+#about p {
     font-family: 'Montserrat', sans-serif;
-    font-size:20px;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -124,34 +126,88 @@ button {
 
 #portfolio {
     padding-top: 1em;
-    padding-bottom: 1em;
+    padding-bottom: 5em;
 }
-#portfolio p{
+
+#portfolio p {
     font-family: 'Montserrat', sans-serif;
-    font-size:20px;
+    font-size: 20px;
     font-weight: bold;
-   
 }
-h3{
+
+h3 {
     font-family: 'Lobster', cursive;
     font-size: 35px;
 }
 
-#services p{
+#services p {
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     font-weight: 600;
 }
 
-#services figure{
+#services figure {
     padding: 20px;
 }
 
-#services h2{
+#services h2 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
 }
 
-span{
-    display:block;
+span {
+    display: block;
 }
+
+#projects {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 300px 300px;
+    grid-gap: 5em;
+}
+
+#projects div {
+    height: 300px;
+    width: 300px;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    position: relative;
+   
+}
+
+#project-1 {
+    background-image: url('images/projects/p-1.png');
+    background-size: 521px;
+}
+
+#project-2 {
+    background-image: url('images/projects/p-2.png');
+    background-size: 521px;
+}
+
+#project-3 {
+    background-image: url('images/projects/p-3.png');
+    background-size: 521px;
+}
+
+#project-4 {
+    background-image: url('images/projects/p-4.png');
+    background-size: 521px;
+}
+
+#project-5 {
+    background-image: url('images/projects/p-5.png');
+    background-size: 521px;
+}
+
+#project-6 {
+    background-image: url('images/projects/p-6.png');
+    background-size: 521px;
+}
+
+.figcaption{
+    
+    background-color: #00000070;
+    position: absolute;
+    top: 0;
+    left: 0;
