@@ -1,6 +1,8 @@
 body {
     margin: 0;
     padding: 0;
+    width: 100%;
+    posit
 }
 
 #discount {
@@ -43,11 +45,8 @@ a {
     text-decoration: none;
     color: white;
     padding: 5px 10px;
+    font-family: 'Montserrat', sans-serif;
 }
-
-
-  
-
 
 #about {
     background-color: #f18d97;
@@ -110,11 +109,23 @@ button {
     color: red;
 }
 
-@media only screen and (max-width:500px) {
+@media only screen and (max-width:700px) {
     #services {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    #projects {
+        flex-wrap:wrap;
+        margin-left:0;
+    }
+}
+
+@media only screen and (max-width:375px) {
+
+    #projects {
+        flex-wrap:wrap;
+        margin-left:0;
     }
 }
 
@@ -126,7 +137,8 @@ button {
 
 #portfolio {
     padding-top: 1em;
-    padding-bottom: 5em;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 #portfolio p {
@@ -160,19 +172,18 @@ span {
 }
 
 #projects {
-    display: grid;
-    grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 300px 300px;
-    grid-gap: 5em;
-    margin-left:100px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left:10%;
+    justify-content: center;
+    align-items: center;
 }
 
 #projects div {
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
     background-repeat: no-repeat;
     border-radius: 20px;
-   
 }
 
 #project-1 {
@@ -205,90 +216,85 @@ span {
     background-size: 521px;
 }
 
- #projects figcaption{
-    
+#projects figcaption {
     background-color: #00000070;
     position: absolute;
     top: 0;
-    border-radius:20px;
-    height: 300px;
-    width: 300px;
-    display:none;
-}
-#projects figure{
-    position:relative;
-
+    border-radius: 20px;
+    height: 200px;
+    width: 200px;
+    display: none;
 }
 
-h4{
+#projects figure {
+    position: relative;
+}
+
+h4 {
     font-family: 'Montserrat', sans-serif;
-    color:white;
-    margin-top: 60px;
-
+    color: white;
+    margin-top: 1em;
 }
 
-#projects figcaption i{
-    color:white;
-    border:1px solid white;
-    border-radius:100%;
-    padding:10px;
-    font-size:2em;
-    margin:10px;
-    /* height: 50px;
-    width:50px; */
-
+#projects figcaption i {
+    color: white;
+    border: 1px solid white;
+    border-radius: 100%;
+    padding: 10px;
+    font-size: 1em;
+    margin: 10px;
 }
 
-#projects figcaption i:hover{
+#projects figcaption i:hover {
     background-color: white;
     color: black;
 }
 
-#projects figure:hover figcaption{
-    display:block;
+#projects figure:hover figcaption {
+    display: block;
 }
 
-#contact{
+#contact {
     text-align: center;
     background-color: #a8bfbe;
     background-image: url('images/floral.png');
     padding-bottom: 2em;
 }
 
-#contact h3{
-    margin:0;
-    padding-top:2em;
+#contact h3 {
+    margin: 0;
+    padding-top: 2em;
 }
 
-#contact i{
-    font-size:2.5em;
-    border:1px solid black;
-    border-radius:100%;
-    padding:10px;
-    margin-right:10px;
+#contact i {
+    font-size: 2.5em;
+    border: 1px solid black;
+    border-radius: 100%;
+    padding: 10px;
+    margin-right: 10px;
 }
 
-#contact i:hover{
+#contact i:hover {
     background-color: black;
-    color:#fcdea6;
+    color: #fcdea6;
 }
 
-footer{
-    background-color:#222222;
+footer {
+    background-color: #222222;
     text-align: center;
 }
 
-footer p{
-    color:white;
-    margin:0;
-    padding-top:50px;
-    padding-bottom:50px;
+footer p {
+    color: white;
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
-footer i{
+footer i {
     padding: 4px;
 }
 
-footer:hover i{
-    color:red;
+footer:hover i {
+    color: red;
 }
