@@ -45,9 +45,9 @@ a {
     padding: 5px 10px;
 }
 
-main {
-    height: 100vh;
-}
+
+  
+
 
 #about {
     background-color: #f18d97;
@@ -161,9 +161,10 @@ span {
 
 #projects {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 300px 300px 300px;
     grid-template-rows: 300px 300px;
     grid-gap: 5em;
+    margin-left:100px;
 }
 
 #projects div {
@@ -171,7 +172,6 @@ span {
     width: 300px;
     background-repeat: no-repeat;
     border-radius: 20px;
-    position: relative;
    
 }
 
@@ -205,9 +205,90 @@ span {
     background-size: 521px;
 }
 
-.figcaption{
+ #projects figcaption{
     
     background-color: #00000070;
     position: absolute;
     top: 0;
-    left: 0;
+    border-radius:20px;
+    height: 300px;
+    width: 300px;
+    display:none;
+}
+#projects figure{
+    position:relative;
+
+}
+
+h4{
+    font-family: 'Montserrat', sans-serif;
+    color:white;
+    margin-top: 60px;
+
+}
+
+#projects figcaption i{
+    color:white;
+    border:1px solid white;
+    border-radius:100%;
+    padding:10px;
+    font-size:2em;
+    margin:10px;
+    /* height: 50px;
+    width:50px; */
+
+}
+
+#projects figcaption i:hover{
+    background-color: white;
+    color: black;
+}
+
+#projects figure:hover figcaption{
+    display:block;
+}
+
+#contact{
+    text-align: center;
+    background-color: #a8bfbe;
+    background-image: url('images/floral.png');
+    padding-bottom: 2em;
+}
+
+#contact h3{
+    margin:0;
+    padding-top:2em;
+}
+
+#contact i{
+    font-size:2.5em;
+    border:1px solid black;
+    border-radius:100%;
+    padding:10px;
+    margin-right:10px;
+}
+
+#contact i:hover{
+    background-color: black;
+    color:#fcdea6;
+}
+
+footer{
+    background-color:#222222;
+    text-align: center;
+}
+
+footer p{
+    color:white;
+    margin:0;
+    padding-top:50px;
+    padding-bottom:50px;
+}
+
+footer i{
+    padding: 4px;
+}
+
+footer:hover i{
+    color:red;
+}
